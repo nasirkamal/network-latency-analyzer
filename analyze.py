@@ -15,7 +15,7 @@ args_parser.add_argument('--cdf_filename', '-cf', type=str, required=False, help
 args_parser.add_argument('--pdf_cdf_filename', '-pcf', type=str, required=False, help='File name to save pdf-cdf graph. E.g., pdf-cdf.jpg')
 args_parser.add_argument('--bins', '-bn', default='auto', required=False, help='Number of bins for drawing histogram/pdf/cdf.')
 args_parser.add_argument('--hist_yscale', '-hy', default='linear', required=False, type=str, choices=['linear', 'log', 'symlog', 'logit'], help='Histogram Y-Scale, ')
-args_parser.add_argument('--pcaps_dir', '-pd', default='pcaps', required=False, type=str, help='Directory name containing pcaps.')
+args_parser.add_argument('--pcaps_dir', '-pd', default='.', required=False, type=str, help='Directory name containing pcaps.')
 args_parser.add_argument('--graphs_dir', '-gd', default='graphs', required=False, type=str, help='Directory name to save graph plots output.')
 
 args = args_parser.parse_args()
